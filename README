@@ -1,0 +1,5 @@
+A simple Python script to check if a website responds to requests or not.
+
+It only support one site, no multi site check.
+
+Can be run as a stand alone script or cron.
