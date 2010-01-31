@@ -1,5 +1,12 @@
-A simple Python script to check if a website responds to requests or not.
+A small and very simple Python script to check if a website responds
+to requests or not.
 
 It only support one site, no multi site check.
 
-Can be run as a stand alone script or cron.
+Can be run as a standalone script or cron.
+
+It'll only notify offline status if the site has been unreachable for more
+than OFFLINE_INTERVAL seconds. This way the server can be unresponsive
+for a short while (reboot, maintenance, etc.). If the site is online again
+within OFFLINE_INTERVAL you won't get any unnecessary notifications about the
+short downtime.
